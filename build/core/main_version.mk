@@ -10,7 +10,9 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.custom.fingerprint=$(ROM_FINGERPRINT) \
     ro.custom.version=$(CUSTOM_VERSION) \
     ro.custom.device=$(CUSTOM_BUILD) \
-    ro.modversion=$(CUSTOM_VERSION)
+    ro.modversion=$(CUSTOM_VERSION) \
+    ro.custom.build_type=$(CUSTOM_BUILD_TYPE) \
+    ro.custom.maintainer=$(CUSTOM_MAINTAINER)
 
 # Updater
 ifeq ($(IS_OFFICIAL),true)
