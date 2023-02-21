@@ -32,6 +32,7 @@ endif
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
+    vendor/aosp/prebuilt/common/etc/init/init.custom-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.custom-system_ext.rc \
     vendor/aosp/prebuilt/common/bin/backuptool.sh:install/bin/backuptool.sh \
     vendor/aosp/prebuilt/common/bin/backuptool.functions:install/bin/backuptool.functions \
     vendor/aosp/prebuilt/common/bin/50-custom.sh:$(TARGET_COPY_OUT_SYSTEM)/addon.d/50-custom.sh
