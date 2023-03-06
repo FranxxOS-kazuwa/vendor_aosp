@@ -14,3 +14,11 @@ ADDITIONAL_SYSTEM_PROPERTIES += \
     ro.custom.build_type=$(CUSTOM_BUILD_TYPE) \
     ro.custom.maintainer=$(CUSTOM_MAINTAINER) \
     ro.franxx-kazuwa.version=$(FRANXX_VERSION)
+
+# Updater
+ifeq ($(IS_OFFICIAL),true)
+    ADDITIONAL_SYSTEM_PROPERTIES  += \
+        ro.is_official=true
+        net.franxx.build_type=Verified \
+        net.franxx.version=$(CUSTOM_VERSION_PROP)
+endif
